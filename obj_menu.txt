@@ -1,0 +1,5 @@
+obj_menu
+sprite menu
+
+on left release
+go to room temp room

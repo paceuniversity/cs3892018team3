@@ -1,0 +1,5 @@
+obj_backarrow
+sprite backarrow
+
+on left released
+got to room TeaMixingScreen

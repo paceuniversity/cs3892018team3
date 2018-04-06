@@ -1,0 +1,4 @@
+obj_title
+
+on create, change sprite to 
+Title Subimage 0 Speed 0

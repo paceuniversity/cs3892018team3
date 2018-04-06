@@ -1,0 +1,5 @@
+obj_recipebook
+sprite Recipebook
+
+on left released
+go to room temproom2

@@ -1,0 +1,5 @@
+obj_touchscreen
+sprite invisibletouchscreen
+
+on left released 
+go to next room

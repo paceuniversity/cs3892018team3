@@ -1,0 +1,28 @@
+obj_ingredient1
+sprite test_ingredient 
+
+on create execute a piece of code
+grab = false;
+xx = 0;
+yy = 0;
+
+on step execute a piece of code
+if (grab == false)
+{
+    exit;
+}
+else
+{
+ x = mouse_x + xx;
+ y = mouse_y + yy;
+}
+
+on left pressed execute a piece of code
+grab = true;
+depth = -1;
+xx = x - mouse_x;
+yy = y - mouse_y;
+
+on left released execute a piece of code
+grab = false;
+depth = 0;
