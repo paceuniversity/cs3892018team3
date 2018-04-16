@@ -15,6 +15,12 @@
     <sprite>sprites\menu</sprite>
     <sprite>sprites\backarrow</sprite>
     <sprite>sprites\test_ingredient</sprite>
+    <sprite>sprites\AboutBtn</sprite>
+    <sprite>sprites\OptnBtn</sprite>
+    <sprite>sprites\ReturnBtn</sprite>
+    <sprite>sprites\TitleScrnBtn</sprite>
+    <sprite>sprites\MenuBox</sprite>
+    <sprite>sprites\teatray</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\ingame</background>
@@ -31,6 +37,12 @@
     <object>objects\obj_menu</object>
     <object>objects\obj_backarrow</object>
     <object>objects\obj_ingredient1</object>
+    <object>objects\obj_menuoptions</object>
+    <object>objects\obj_aboutbtn</object>
+    <object>objects\obj_optnbtn</object>
+    <object>objects\obj_returnbtn</object>
+    <object>objects\obj_titlescrn</object>
+    <object>objects\obj_teatray</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\StartScreen</room>
