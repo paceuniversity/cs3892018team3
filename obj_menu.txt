@@ -2,4 +2,9 @@ obj_menu
 sprite menu
 
 on left release
-go to room temp room
+execute a piece of code
+instance_create(510, 290, obj_menuoptions);
+instance_create(342, 226, obj_aboutbtn);
+instance_create(342, 298, obj_titlescrn);
+instance_create(342, 154, obj_optnbtn);
+instance_create(342, 370, obj_returnbtn);
