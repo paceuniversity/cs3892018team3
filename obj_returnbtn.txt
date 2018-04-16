@@ -1,0 +1,21 @@
+obj_returnbtn
+sprite: ReturnBtn
+Parent: obj_menuoptions
+depth: -101
+
+one left pressed
+change sprite into ReturnBtn
+	Applies to self
+	sprite: ReturnBtn
+	subimage: 1
+	speed:0
+
+on left released
+change sprite into returnBtn
+	Applies to self
+	sprite: ReturnBtn
+	subimage: 0
+	speed:0
+execute a piece of code
+
+instance_destroy(obj_menuoptions);

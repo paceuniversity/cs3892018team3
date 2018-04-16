@@ -1,0 +1,19 @@
+obj_aboutbtn
+Sprite: AboutBtn
+Parent: obj_menuoptions
+depth: -101
+
+on left pressed
+change sprite into AbtBtn
+	Applies to self
+	sprite: AbtBtn
+	subimage: 1
+	speed:0
+
+on left released
+change sprite into AbtBtn
+	Applies to self
+	sprite: AbtBtn
+	subimage: 0
+	speed:0
+go to room temproom

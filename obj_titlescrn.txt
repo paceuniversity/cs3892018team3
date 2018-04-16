@@ -1,0 +1,19 @@
+obj_titlescrn
+sprite: ReturnBtn
+Parent: obj_menuoptions
+depth: -101
+
+one left pressed
+change sprite into TitleScrnBtn
+	Applies to self
+	sprite: TitleScrnBtn
+	subimage: 1
+	speed:0
+
+on left released
+change sprite into TitleScrnBtn
+	Applies to self
+	sprite: TitleScrnBtn
+	subimage: 0
+	speed:0
+go to rrom StartScreen

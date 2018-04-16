@@ -1,0 +1,19 @@
+obj_optnbtn
+sprite: OptnBtn
+Parent: obj_menuoptions
+depth: -101
+
+on left pressed
+change sprite into OptnBtn
+	Applies to self
+	sprite: OptnBtn
+	subimage: 1
+	speed:0
+
+on left released
+change sprite into OptnBtn
+	Applies to self
+	sprite: OptnBtn
+	subimage: 0
+	speed:0
+go to room temproom
