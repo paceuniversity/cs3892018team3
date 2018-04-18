@@ -1,0 +1,78 @@
+obj_teatray
+sprite teatray
+
+on create
+change sprite into teatray (image: 0 speed: 0)
+execute a piece of code
+totalingredient= 0;
+
+on step
+execute a piece of code
+if totalingredient >= 5
+{
+image_index=2;
+};
+
+if totalingredient >= 5
+{
+if mouse_check_button_pressed(mb_left)
+   {
+   room_goto(taproom);
+   }
+}
+
+on collision with obj_camelia
+change sprite into teatray (image: 1 speed: 0)
+execute a piece of code
+totalingredient += 1;
+instance_destroy(obj_camelia);
+instance_create( 58, 66, obj_camelia);
+
+on collision with obj_chr
+change sprite into teatray (image: 1 speed: 0)
+execute a piece of code
+totalingredient += 1;
+instance_destroy(obj_chr);
+instance_create( 162, 66, obj_chr);
+
+on collision with obj_rouqui
+change sprite into teatray (image: 1 speed: 0)
+execute a piece of code
+totalingredient += 1;
+instance_destroy(obj_rouqui);
+instance_create( 272, 66, obj_rouqui);
+
+on collision with obj_jasmine
+change sprite into teatray (image: 1 speed: 0)
+execute a piece of code
+totalingredient += 1;
+instance_destroy(obj_jasmine);
+instance_create( 384, 66, obj_jasmine);
+
+on collision with obj_camelia2
+change sprite into teatray (image: 1 speed: 0)
+execute a piece of code
+totalingredient += 1;
+instance_destroy(obj_camelia2);
+instance_create( 164, 192, obj_camelia2);
+
+on collision with obj_tapioca
+change sprite into teatray (image: 1 speed: 0)
+execute a piece of code
+totalingredient += 1;
+instance_destroy(obj_tapioca);
+instance_create( 54, 192, obj_tapioca);
+
+on collision with obj_shoumei
+change sprite into teatray (image: 1 speed: 0)
+execute a piece of code
+totalingredient += 1;
+instance_destroy(obj_shoumei);
+instance_create( 270, 192, obj_shoumei);
+
+
+
+
+
+
+
