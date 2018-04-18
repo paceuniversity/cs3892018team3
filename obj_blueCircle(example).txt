@@ -1,0 +1,17 @@
+Information about object: obj_blueCircle
+Sprite: spr_blueCircle
+Solid: false
+Visible: true
+Depth: 0
+Persistent: false
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Mouse Event for Left Button:
+
+for all obj_text: execute code:
+
+showtext=3;
+

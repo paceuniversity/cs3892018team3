@@ -1,0 +1,17 @@
+Information about object: obj_redCircle
+Sprite: spr_redCirc
+Solid: false
+Visible: true
+Depth: 0
+Persistent: false
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Mouse Event for Left Pressed:
+
+for all obj_text: execute code:
+
+showtext = 2;
+

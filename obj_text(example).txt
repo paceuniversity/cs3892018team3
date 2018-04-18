@@ -1,0 +1,49 @@
+Information about object: obj_text
+Sprite: spr_textTest
+Solid: true
+Visible: true
+Depth: 0
+Persistent: true
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Create Event:
+
+execute code:
+
+showtext=0;
+draw_set_color(c_aqua);
+draw_text(400, 400, "test");
+show_debug_message("it's here");
+
+Draw Event:
+
+execute code:
+
+draw_self();
+draw_set_color(c_aqua);
+
+if (showtext==1){
+
+draw_text(100,100, "hello, world!");
+
+}
+else if (showtext==2)
+{
+draw_text(100,100, "red");
+}
+else if (showtext==3){
+draw_text(100,100, "blue");
+}
+else{
+draw_text(100,100,"goodbye world");
+}
+
+Key Press Event for <Space> Key:
+
+execute code:
+
+showtext=1;
+
