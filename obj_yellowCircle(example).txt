@@ -1,0 +1,17 @@
+Information about object: obj_yellowCircle
+Sprite: spr_yellowCircle
+Solid: false
+Visible: true
+Depth: 0
+Persistent: false
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Mouse Event for Left Pressed:
+
+for all obj_wordTest: set the sprite to spr_wordTest with subimage 1 and speed 0
+Mouse Event for Left Released:
+
+for all obj_wordTest: set the sprite to spr_wordTest with subimage 0 and speed 0
