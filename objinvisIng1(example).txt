@@ -1,0 +1,20 @@
+Information about object: objinvisIng1
+Sprite: test_ingredient
+Solid: false
+Visible: false
+Depth: 0
+Persistent: false
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Mouse Event for Left Button:
+
+for all objND: set the sprite to nameDisplay with subimage 2 and speed 0
+Mouse Event for No Button:
+
+for all objND: set the sprite to nameDisplay with subimage 0 and speed 0
+Mouse Event for Left Released:
+
+for all objND: set the sprite to nameDisplay with subimage 0 and speed 0
