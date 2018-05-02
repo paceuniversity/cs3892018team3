@@ -1,13 +1,39 @@
-obj_teatray
-sprite teatray
+Information about object: obj_teatray
+Sprite: teatray
+Solid: false
+Visible: true
+Depth: 0
+Persistent: false
+Parent: 
+Children: 
+Mask: 
 
-on create
-change sprite into teatray (image: 0 speed: 0)
-execute a piece of code
+No Physics Object
+Create Event:
+
+set the sprite to teatray with subimage 0 and speed 0
+execute code:
+
 totalingredient= 0;
+global.cameliatotal = 0;
+global.chysingredient = 0;
+global.rouquiingredient = 0;
+global.jasmineingredient = 0;
+global.camelia2ingredient = 0;
+global.tapiocaingredient = 0;
+global.shoumeiingredient = 0;
+global.sugaringredient = 0;
+global.wateringredient = 0;
+global.milkingredient = 0;
+global.redingredient = 0;
+global.longaningredient = 0;
+global.honeyingredient = 0;
+global.gingeringredient = 0;
 
-on step
-execute a piece of code
+Step Event:
+
+execute code:
+
 if totalingredient >= 5
 {
 image_index=2;
@@ -17,62 +43,198 @@ if totalingredient >= 5
 {
 if mouse_check_button_pressed(mb_left)
    {
+   audio_play_sound(sound_ready, 10, false);
    room_goto(taproom);
    }
 }
 
-on collision with obj_camelia
-change sprite into teatray (image: 1 speed: 0)
-execute a piece of code
+
+Collision Event with object obj_camelia:
+
+set the sprite to teatray with subimage 1 and speed 0
+execute code:
+
 totalingredient += 1;
+global.cameliatotal +=1;
+
 instance_destroy(obj_camelia);
 instance_create( 58, 66, obj_camelia);
 
-on collision with obj_chr
-change sprite into teatray (image: 1 speed: 0)
-execute a piece of code
+
+play sound sound_nsert; looping: false
+Collision Event with object obj_chr:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
 totalingredient += 1;
+global.chysingredient += 1;
+
+
 instance_destroy(obj_chr);
 instance_create( 162, 66, obj_chr);
 
-on collision with obj_rouqui
-change sprite into teatray (image: 1 speed: 0)
-execute a piece of code
+
+Collision Event with object obj_rouqui:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
 totalingredient += 1;
+global.rouquiingredient += 1;
+
+
 instance_destroy(obj_rouqui);
 instance_create( 272, 66, obj_rouqui);
 
-on collision with obj_jasmine
-change sprite into teatray (image: 1 speed: 0)
-execute a piece of code
+
+Collision Event with object obj_jasmine:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
 totalingredient += 1;
+global.jasmineingredient += 1;
+
+
 instance_destroy(obj_jasmine);
 instance_create( 384, 66, obj_jasmine);
 
-on collision with obj_camelia2
-change sprite into teatray (image: 1 speed: 0)
-execute a piece of code
+
+Collision Event with object obj_camelia2:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
 totalingredient += 1;
+global.camelia2ingredient += 1;
+
+
 instance_destroy(obj_camelia2);
 instance_create( 164, 192, obj_camelia2);
 
-on collision with obj_tapioca
-change sprite into teatray (image: 1 speed: 0)
-execute a piece of code
+
+Collision Event with object obj_tapioca:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
 totalingredient += 1;
+global.tapiocaingredient += 1;
+
+
 instance_destroy(obj_tapioca);
 instance_create( 54, 192, obj_tapioca);
 
-on collision with obj_shoumei
-change sprite into teatray (image: 1 speed: 0)
-execute a piece of code
+
+Collision Event with object obj_shoumei:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
 totalingredient += 1;
+global.shoumeiingredient += 1;
+
+
 instance_destroy(obj_shoumei);
 instance_create( 270, 192, obj_shoumei);
 
 
+Collision Event with object obj_sugar:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
+totalingredient += 1;
+global.sugaringredient += 1;
+
+instance_destroy(obj_sugar);
+instance_create( 58, 446, obj_sugar);
 
 
+Collision Event with object obj_water:
 
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
+totalingredient += 1;
+global.wateringredient += 1;
+
+
+instance_destroy(obj_water);
+instance_create( 166, 436, obj_water);
+
+
+Collision Event with object obj_milk:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
+totalingredient += 1;
+global.milkingredient += 1;
+
+instance_destroy(obj_milk);
+instance_create( 272, 446, obj_milk);
+
+
+Collision Event with object obj_reddate:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
+totalingredient += 1;
+global.redingredient += 1;
+
+instance_destroy(obj_reddate);
+instance_create( 56, 310, obj_reddate);
+
+
+Collision Event with object obj_ginger:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
+totalingredient += 1;
+global.gingeringredient += 1;
+
+instance_destroy(obj_ginger);
+instance_create( 382, 192, obj_ginger);
+
+
+Collision Event with object obj_longan:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
+totalingredient += 1;
+global.longaningredient += 1;
+
+instance_destroy(obj_longan);
+instance_create( 165, 312, obj_longan);
+
+
+Collision Event with object obj_honey:
+
+set the sprite to teatray with subimage 1 and speed 0
+play sound sound_nsert; looping: false
+execute code:
+
+totalingredient += 1;
+global.honeyingredient += 1;
+
+instance_destroy(obj_honey);
+instance_create( 382, 436, obj_honey);
 
 
