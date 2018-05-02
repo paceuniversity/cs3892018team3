@@ -1,0 +1,25 @@
+Information about object: muteoptions
+Sprite: 
+Solid: false
+Visible: true
+Depth: 0
+Persistent: false
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Step Event:
+
+execute code:
+
+if global.mute = true
+{
+instance_create( 780, 270, obj_MuteOn);
+}
+
+if global.mute = false
+{
+instance_create(780, 270, obj_MuteOff);
+}
+
