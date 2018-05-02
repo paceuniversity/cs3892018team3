@@ -1,0 +1,31 @@
+//this is the same for all teas. Just change the name of the tea. Ex: GreenTea -> Black Tea
+
+Information about object: obj_GreenTea
+Sprite: teaSil
+Solid: false
+Visible: true
+Depth: 0
+Persistent: false
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Step Event:
+
+execute code:
+
+if global.GreenTea = true
+{
+sprite_index = GreenTeaSprite;
+}
+
+Mouse Event for Left Released:
+
+execute code:
+
+if global.GreenTea = true
+{
+room_goto(Green_Tea_Room)
+}
+
