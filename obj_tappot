@@ -1,0 +1,103 @@
+Information about object: obj_tappot
+Sprite: bigpot
+Solid: false
+Visible: true
+Depth: 0
+Persistent: false
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Create Event:
+
+set the sprite to bigpot with subimage 0 and speed 0
+execute code:
+
+tapCount = 0;
+
+Step Event:
+
+execute code:
+
+if tapCount >= 12 && global.cameliatotal = 3 && global.camelia2ingredient = 1 && global.wateringredient = 1
+{
+audio_play_sound(sound_ready, 10, false);
+room_goto(Tea_Success_Room);
+global.GreenTea = true;
+} ;
+
+if tapCount >= 12 && global.cameliatotal = 1 && global.camelia2ingredient = 3 && global.wateringredient = 1
+{
+audio_play_sound(sound_ready, 10, false);
+room_goto(Tea_Success_Room);
+global.BlackTea = true;
+} ;
+
+if tapCount >= 12 && global.jasmineingredient = 4 && global.wateringredient = 1
+{
+audio_play_sound(sound_ready, 10, false);
+room_goto(Tea_Success_Room);
+global.JasmineTea = true;
+} ;
+
+if tapCount >= 12 && global.rouquiingredient = 2 && global.cameliatotal = 1 && global.camelia2ingredient = 1 && global.wateringredient = 1
+{
+audio_play_sound(sound_ready, 10, false);
+room_goto(Tea_Success_Room);
+global.OolongTea = true;
+} ;
+
+if tapCount >= 12 && global.chysingredient = 4 && global.wateringredient = 1
+{
+audio_play_sound(sound_ready, 10, false);
+room_goto(Tea_Success_Room);
+global.ChrysTea = true;
+} ;
+
+if tapCount >= 12 && global.shoumeiingredient = 2 && global.wateringredient = 1 && global.rouquiiingredient = 1 && global.camelia2ingredient = 1
+{
+audio_play_sound(sound_ready, 10, false);
+room_goto(Tea_Success_Room);
+global.WhiteTea = true;
+} ;
+
+if tapCount >= 12 && global.redingredient = 1 && global.wateringredient = 1 && global.longaningredient = 1 && global.honeyingredient = 1 && global.sugaringredient = 1
+{
+audio_play_sound(sound_ready, 10, false);
+room_goto(Tea_Success_Room);
+global.RedDateTea = true;
+} ;
+
+if tapCount >= 12 && global.gingeringredient = 1 && global.wateringredient = 1 && global.longaningredient = 1 && global.honeyingredient = 1 && global.sugaringredient = 1
+{
+audio_play_sound(sound_ready, 10, false);
+room_goto(Tea_Success_Room);
+global.GingerTea = true;
+} ;
+
+if tapCount >= 12 && global.milkingredient = 1 && global.wateringredient = 1 && global.tapiocaingredient = 1 && global.camelia2ingredient = 1 && global.sugaringredient = 1
+{
+audio_play_sound(sound_ready, 10, false);
+room_goto(Tea_Success_Room);
+global.BubbleTea = true;
+} ;
+
+else if tapCount >= 13
+{
+room_goto(Tea_No_Room);
+}
+
+Mouse Event for Left Pressed:
+
+play sound sound_tap; looping: false
+set the sprite to bigpot with subimage 1 and speed 0
+execute code:
+
+tapCount += 1;
+
+instance_destroy(obj_tapwords);
+
+Mouse Event for Left Released:
+
+set the sprite to bigpot with subimage 0 and speed 0
