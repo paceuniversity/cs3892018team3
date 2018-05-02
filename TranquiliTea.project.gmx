@@ -4,7 +4,28 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound_chrysanthemum</sound>
+    <sound>sound\sound_CamelliaSinensus</sound>
+    <sound>sound\sound_CameliaTaliensus</sound>
+    <sound>sound\sound_Rougui</sound>
+    <sound>sound\sound_Jasmine</sound>
+    <sound>sound\sound_shoumei</sound>
+    <sound>sound\sound_button</sound>
+    <sound>sound\sound_tap</sound>
+    <sound>sound\sound_start</sound>
+    <sound>sound\sound_nsert</sound>
+    <sound>sound\sound_ready</sound>
+    <sound>sound\sound_bgm</sound>
+    <sound>sound\sound_honey</sound>
+    <sound>sound\sound_sugar</sound>
+    <sound>sound\sound_water</sound>
+    <sound>sound\sound_ginger</sound>
+    <sound>sound\sound_longan</sound>
+    <sound>sound\sound_boba</sound>
+    <sound>sound\sound_milk</sound>
+    <sound>sound\sound_reddate</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\invisibletouchscreen</sprite>
     <sprite>sprites\sprite1</sprite>
@@ -14,13 +35,78 @@
     <sprite>sprites\star</sprite>
     <sprite>sprites\menu</sprite>
     <sprite>sprites\backarrow</sprite>
-    <sprite>sprites\test_ingredient</sprite>
+    <sprite>sprites\next</sprite>
     <sprite>sprites\AboutBtn</sprite>
     <sprite>sprites\OptnBtn</sprite>
     <sprite>sprites\ReturnBtn</sprite>
     <sprite>sprites\TitleScrnBtn</sprite>
     <sprite>sprites\MenuBox</sprite>
     <sprite>sprites\teatray</sprite>
+    <sprite>sprites\bigpot</sprite>
+    <sprite>sprites\sprite16</sprite>
+    <sprite>sprites\camelia</sprite>
+    <sprite>sprites\christh</sprite>
+    <sprite>sprites\rouqui</sprite>
+    <sprite>sprites\jasmine</sprite>
+    <sprite>sprites\camelia2</sprite>
+    <sprite>sprites\tapioca</sprite>
+    <sprite>sprites\shoumei</sprite>
+    <sprite>sprites\RedDate</sprite>
+    <sprite>sprites\Ginger</sprite>
+    <sprite>sprites\Honey</sprite>
+    <sprite>sprites\Longan</sprite>
+    <sprite>sprites\water</sprite>
+    <sprite>sprites\sugar</sprite>
+    <sprite>sprites\Milk</sprite>
+    <sprite>sprites\mascot</sprite>
+    <sprite>sprites\Off</sprite>
+    <sprite>sprites\On</sprite>
+    <sprite>sprites\SpeakerIcon</sprite>
+    <sprite>sprites\teaSil</sprite>
+    <sprite>sprites\GreenTeaSprite</sprite>
+    <sprite>sprites\BlackTeaSprite</sprite>
+    <sprite>sprites\CrysTeaSprite</sprite>
+    <sprite>sprites\JasmineTeaSprite</sprite>
+    <sprite>sprites\OolongTeaSprite</sprite>
+    <sprite>sprites\WhiteTeaSprite</sprite>
+    <sprite>sprites\GingerTeaSprite</sprite>
+    <sprite>sprites\RedTeaSprite</sprite>
+    <sprite>sprites\BubbleTeaSprite</sprite>
+    <sprite>sprites\PuerTeaSprite</sprite>
+    <sprite>sprites\CameliaSynthesisWords</sprite>
+    <sprite>sprites\TapiocaBallsWords</sprite>
+    <sprite>sprites\CameliaTaliensisWords</sprite>
+    <sprite>sprites\ChrysWords</sprite>
+    <sprite>sprites\JasmineWords</sprite>
+    <sprite>sprites\RouguiWords</sprite>
+    <sprite>sprites\emptyingredient</sprite>
+    <sprite>sprites\AbtTitle</sprite>
+    <sprite>sprites\OptionTitle</sprite>
+    <sprite>sprites\optionOptions</sprite>
+    <sprite>sprites\SugarWords</sprite>
+    <sprite>sprites\WaterWords</sprite>
+    <sprite>sprites\MilkWords</sprite>
+    <sprite>sprites\ShoumeiWords</sprite>
+    <sprite>sprites\HoneyWords</sprite>
+    <sprite>sprites\LonganWords</sprite>
+    <sprite>sprites\GingerWords</sprite>
+    <sprite>sprites\RedWords</sprite>
+    <sprite>sprites\GreenTeadesc</sprite>
+    <sprite>sprites\BlackTeadesc</sprite>
+    <sprite>sprites\WhiteTeadesc</sprite>
+    <sprite>sprites\JasmineTeadesc</sprite>
+    <sprite>sprites\OolongTeadesc</sprite>
+    <sprite>sprites\ChrysTeadesc</sprite>
+    <sprite>sprites\GingerTeadesc</sprite>
+    <sprite>sprites\RedTeadesc</sprite>
+    <sprite>sprites\BubbleTeadesc</sprite>
+    <sprite>sprites\PuerTeadesc</sprite>
+    <sprite>sprites\MadeTea</sprite>
+    <sprite>sprites\fail</sprite>
+    <sprite>sprites\rbtitle</sprite>
+    <sprite>sprites\i1</sprite>
+    <sprite>sprites\i2</sprite>
+    <sprite>sprites\i3</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\ingame</background>
@@ -29,26 +115,105 @@
     <background>background\bgtemp2</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_ing</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_title</object>
     <object>objects\obj_tap</object>
     <object>objects\obj_touchscreen</object>
+    <object>objects\obj_it1</object>
+    <object>objects\invisiblets2</object>
     <object>objects\obj_recipebook</object>
     <object>objects\obj_menu</object>
     <object>objects\obj_backarrow</object>
-    <object>objects\obj_ingredient1</object>
+    <object>objects\obj_rbackarrow</object>
+    <object>objects\obj_rNextArrow</object>
+    <object>objects\obj_NextArrow</object>
     <object>objects\obj_menuoptions</object>
     <object>objects\obj_aboutbtn</object>
     <object>objects\obj_optnbtn</object>
     <object>objects\obj_returnbtn</object>
     <object>objects\obj_titlescrn</object>
     <object>objects\obj_teatray</object>
+    <object>objects\obj_tappot</object>
+    <object>objects\obj_tapwords</object>
+    <object>objects\obj_camelia</object>
+    <object>objects\obj_chr</object>
+    <object>objects\obj_rouqui</object>
+    <object>objects\obj_jasmine</object>
+    <object>objects\obj_camelia2</object>
+    <object>objects\obj_tapioca</object>
+    <object>objects\obj_shoumei</object>
+    <object>objects\obj_sugar</object>
+    <object>objects\obj_water</object>
+    <object>objects\obj_milk</object>
+    <object>objects\obj_reddate</object>
+    <object>objects\obj_ginger</object>
+    <object>objects\obj_longan</object>
+    <object>objects\obj_honey</object>
+    <object>objects\obj_mascot</object>
+    <object>objects\muteoptions</object>
+    <object>objects\AccessOptions</object>
+    <object>objects\obj_MuteOff</object>
+    <object>objects\obj_AccessOff</object>
+    <object>objects\obj_MuteOn</object>
+    <object>objects\obj_AccessOn</object>
+    <object>objects\obj_GreenTea</object>
+    <object>objects\obj_BubbleTea</object>
+    <object>objects\obj_RedTea</object>
+    <object>objects\obj_GingerTea</object>
+    <object>objects\obj_OolongTea</object>
+    <object>objects\obj_WhiteTea</object>
+    <object>objects\obj_JasmineTea</object>
+    <object>objects\obj_BlackTea</object>
+    <object>objects\obj_ChrysTea</object>
+    <object>objects\obj_PuerTea</object>
+    <object>objects\IngredientNames</object>
+    <object>objects\bgmmusic</object>
+    <object>objects\obj_OPTtitle</object>
+    <object>objects\obj_optopt</object>
+    <object>objects\obj_AbtTitle</object>
+    <object>objects\obj_GTD</object>
+    <object>objects\obj_BTD</object>
+    <object>objects\obj_WTD</object>
+    <object>objects\obj_JTD</object>
+    <object>objects\obj_OTD</object>
+    <object>objects\obj_CTD</object>
+    <object>objects\obj_BuTD</object>
+    <object>objects\obj_RTD</object>
+    <object>objects\obj_GiTD</object>
+    <object>objects\obj_PTD</object>
+    <object>objects\obj_Success</object>
+    <object>objects\obj_failure</object>
+    <object>objects\obj_rbooktitle</object>
+    <object>objects\obj_i1</object>
+    <object>objects\obj_i2</object>
+    <object>objects\obj_i3</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\StartScreen</room>
+    <room>rooms\InstructionScreen1</room>
+    <room>rooms\InstructionScreen2</room>
+    <room>rooms\InstructionScreen3</room>
     <room>rooms\TeaMixingScreen</room>
-    <room>rooms\temproom2</room>
-    <room>rooms\temproom</room>
+    <room>rooms\Recipe_Book</room>
+    <room>rooms\Green_Tea_Room</room>
+    <room>rooms\Bubble_Tea_Room</room>
+    <room>rooms\Oolong_Tea_Room</room>
+    <room>rooms\Jasmine_Tea_Room</room>
+    <room>rooms\Black_Tea_Room</room>
+    <room>rooms\Red_Tea_Room</room>
+    <room>rooms\Ginger_Tea_Room</room>
+    <room>rooms\Chrysanthemum_Tea_Room</room>
+    <room>rooms\White_Tea_Room</room>
+    <room>rooms\Puer_Tea_Room</room>
+    <room>rooms\Aboutroom</room>
+    <room>rooms\Tea_Success_Room</room>
+    <room>rooms\Tea_No_Room</room>
+    <room>rooms\OptionsRoom</room>
+    <room>rooms\StartScreenClone</room>
+    <room>rooms\taproom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
