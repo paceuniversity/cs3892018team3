@@ -1,0 +1,46 @@
+Information about object: bgmmusic
+Sprite: 
+Solid: false
+Visible: true
+Depth: 0
+Persistent: false
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Create Event:
+
+play sound sound_bgm; looping: true
+execute code:
+
+global.rouqui_grab = false;
+global.christh_grab = false;
+global.camelia_grab = false;
+global.camelia2_grab = false;
+global.tapioca_grab = false;
+global.jasmine_grab = false;
+global.shoumei_grab = false;
+global.water_grab = false;
+global.sugar_grab = false;
+global.milk_grab = false;
+global.reddate_grab = false;
+global.ginger_grab = false;
+global.longan_grab = false;
+global.honey_grab = false;
+global.grab = false;
+
+global.GreenTea = false;
+global.BlackTea = false;
+global.ChrysTea = false;
+global.WhiteTea = false;
+global.JasmineTea = false;
+global.OolongTea = false;
+global.BubbleTea = false;
+global.RedDateTea = false;
+global.GingerTea = false;
+global.PuerTea = false;
+
+global.mute = false;
+global.accesibility = false;
+
