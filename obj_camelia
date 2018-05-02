@@ -1,0 +1,74 @@
+Information about object: obj_camelia
+Sprite: camelia
+Solid: false
+Visible: true
+Depth: -1
+Persistent: false
+Parent: 
+Children: 
+Mask: 
+
+No Physics Object
+Create Event:
+
+execute code:
+
+grab = false;
+xx = 0;
+yy = 0;
+
+global.camelia_grab = false;
+
+Step Event:
+
+execute code:
+
+if (grab == false)
+{
+    exit;
+}
+else
+{
+ x = mouse_x + xx;
+ y = mouse_y + yy;
+}
+
+Mouse Event for Left Pressed:
+
+execute code:
+
+grab = true;
+depth = -1;
+xx = x - mouse_x;
+yy = y - mouse_y;
+
+global.camelia_grab = true;
+
+if global.accesibility = true
+{
+audio_play_sound(sound_CamelliaSinensus,10,false);
+
+}
+
+scale the sprite with 1.2 in the xdir, 1.2 in the ydir, rotate over 0, and no mirroring
+for all IngredientNames: execute code:
+
+sprite_index = CameliaSynthesisWords;
+
+Mouse Event for Left Released:
+
+execute code:
+
+grab = false;
+depth = 0;
+
+global.camelia_grab = false;
+
+instance_destroy(obj_camelia);
+instance_create( 58, 66, obj_camelia);
+
+scale the sprite with 1 in the xdir, 1 in the ydir, rotate over 0, and no mirroring
+for all IngredientNames: execute code:
+
+sprite_index = emptyingredient;
+
